@@ -420,6 +420,127 @@ jobs:
 
 - ##### ssh: Conecta-se a servidores via SSH.
 
+##### Comandos Bash Tradicionais
+
+- ##### Comandos de navegação e manipulação de arquivos: cd, ls, cp, mv, rm, cat.
+
+- ##### Comandos de controle de fluxo e scripts: if, for, while, case.
+
+ - ##### Redirecionamento de entradas e saídas: Usar >, >>, | para redirecionar e canalizar dados.
+
+#### Criando um Repositório no GitHub
+
+##### Acesse sua conta do GitHub e clique em "New Repository".
+
+##### Dê um nome ao repositório, por exemplo, meu-projeto.
+
+##### Defina as opções do repositório:
+
+- ##### Escolha entre público ou privado.
+
+- ##### Adicione um README.md, se desejar.
+
+- ##### Clique em "Create repository".
+
+#### Preparando o Projeto Localmente
+
+##### Navegue até o diretório do projeto no seu computador:
+
+```dart
+cd caminho/para/seu-projeto
+```
+
+##### Inicialize um repositório Git, caso ainda não tenha feito:
+
+```dart
+git init
+```
+
+##### Adicione o repositório remoto do GitHub ao projeto:
+
+```dart
+git remote add origin https://github.com/seu-usuario/meu-projeto.git
+``` 
+#### Versionando e Preparando Arquivos para o Commit
+
+##### Adicione os arquivos ao "staging area":
+
+```dart 
+git add .
+```
+##### Verifique os arquivos que foram adicionados:
+
+```dart
+git status
+```
+##### Crie um commit com uma mensagem descritiva:
+
+```dart
+git commit -m "Primeiro commit - adicionando todos os arquivos do projeto"
+```
+
+####  Subindo a Aplicação para o Repositório
+
+##### Envie os arquivos para o repositório remoto:
+
+```dart
+git push -u origin main
+```
+- ##### Nota: Se o nome da branch principal for master, substitua main por master.
+
+#### Solução de Problemas Comuns
+
+- ##### Erro de autenticação: Se você encontrar um erro de autenticação, verifique se está usando um token de acesso pessoal em vez de senha. Configure-o no GitHub em Settings > Developer settings > Personal access tokens.
+
+- ##### Branch desatualizada: Se houver atualizações no repositório remoto, você precisará fazer git pull origin main antes de empurrar novamente.
+
+- ##### Erro de branch divergente: Use git pull --rebase origin main para alinhar a branch local com a remota.
+
+####  Passos Adicionais e Boas Práticas
+
+- ##### Atualize o arquivo README.md para incluir uma descrição clara do projeto.
+
+- ##### Adicione um .gitignore para evitar subir arquivos desnecessários, como logs ou pastas de configuração local.
+
+- ##### Verifique o repositório remoto no GitHub para garantir que todos os arquivos e pastas foram corretamente enviados.
+
+####  Subindo Atualizações Futuras
+
+##### Sempre que fizer modificações no projeto e quiser enviar atualizações:
+
+##### Adicione as alterações:
+
+```dart
+git add .
+```
+
+##### Crie um novo commit:
+
+```dart
+git commit -m "Descrição das alterações"
+```
+##### Envie as atualizações:
+
+```dart
+git push origin main
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
